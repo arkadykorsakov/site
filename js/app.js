@@ -11,7 +11,7 @@ button.addEventListener('click', function(e) {
 	let arr = getValuesInputs(nums);
 	if(determinant(arr)!=0 && mainDiagonal(arr)){
 		let values = iteration(arr);
-		return answers[0].innerHTML = `x: ${values[0]}`,answers[1].innerHTML = `y: ${values[1]}`, answers[2].innerHTML = `x: ${values[2]}`;
+		return answers[0].innerHTML = `x: ${values[0]}`,answers[1].innerHTML = `y: ${values[1]}`, answers[2].innerHTML = `z: ${values[2]}`;
 
 	}else{
 		return answer.innerHTML = 'Метод итераций не подходит для данного уравнения';
